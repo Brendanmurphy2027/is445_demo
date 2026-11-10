@@ -2,7 +2,7 @@
 import altair as alt
 import pandas as pd
 import streamlit as st
-from vega_datasets import data as vega_data
+
 
 def load_data():
     df = pd.read_csv("bfro_reports_fall2022.csv")
@@ -31,7 +31,8 @@ seasons = st.multiselect(
 )
 geo = geo[geo["season"].isin(seasons)]
 
-states = alt.topo_feature(vega_data.us_10m.url, "states")
+US_TOPO_URL = "https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/us-10m.json"
+states = alt.topo_feature(US_TOPO_URL, "states")
 base = (
     alt.Chart(states)
     .mark_geoshape(fill="#f2f2f2", stroke="white")
