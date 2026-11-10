@@ -60,11 +60,12 @@ points = (
 st.altair_chart(base + points)
 
 st.write(
-    "**Write-up For Visualization 1.**This map shows where sightings cluster geographically,"
-    "showing concentrations in the Pacific Northwest, Great Lakes, and Appalachia, and"
-    "I used small transparent circles on a light gray base map of the United States with orange/green pair for Class A vs. Class B, "
-    "and a season multiselect and clickable legend for filtering. Given more time, I would add a density layer to reduce overplotting "
-    "in crowded areas and maybe like a zoom in feature where you can focus in on certain regions."
+    "**Write-up for Visualization 1.** This map shows where sightings cluster geographically, "
+    "showing concentrations in the Pacific Northwest, Great Lakes, and Appalachia, and "
+    "I used small transparent circles on a light gray base map of the United States with an "
+    "orange/green pair for Class A vs. Class B, and a season multiselect and clickable legend "
+    "for filtering. Given more time, I would add a density layer to reduce overplotting "
+    "in crowded areas and maybe a zoom feature where you can focus in on certain regions."
 )
 
 st.header("Visualization 2: Which states have the most reports?")
@@ -101,11 +102,11 @@ bars = (
 st.altair_chart(bars)
 
 st.write(
-    "**Write-up For Visualization 2. This chart shows which states have the most reports "
-   " and how summer dominates across states, "
-   " using horizontal bars sorted by total, a zero baseline, intuitive season colors, "
-   " and a slider and radio button to control the number of states and classification. "
-   " Given more time, I would normalize counts by population or land area so large states don’t dominate and add "
-  "  a year filter to show how reporting changes over time."
+    "**Write-up for Visualization 2.** This chart shows which states have the most reports "
+    "and how summer dominates across states, "
+    "using horizontal bars sorted by total, a zero baseline, intuitive season colors, "
+    "and a slider and radio button to control the number of states and classification. "
+    "Given more time, I would normalize counts by population or land area so large states "
+    "don't dominate and add a year filter to show how reporting changes over time."
 )
 
