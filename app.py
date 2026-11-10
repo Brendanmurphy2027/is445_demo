@@ -68,7 +68,7 @@ st.write(
     "in crowded areas and maybe a zoom feature where you can focus in on certain regions."
 )
 
-st.header("Visualization 2: Which states have the most reports?")
+st.header("Visualization 2 - Which states have the most reports?")
 
 c1, c2 = st.columns(2)
 top_n = c1.slider("Number of states", 5, 25, 15)
